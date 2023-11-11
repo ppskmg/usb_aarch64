@@ -179,6 +179,11 @@ sudo ssh-keygen -t rsa -b 4096 -f ssh_host_rsa_key -N "" -m PEM < /dev/null
 sudo nvim /etc/mkinitcpio.conf
 ```
 
+Для следующего шага нужно установить пакеты
+```
+sudo pacman -S mkinitcpio-dropbear mkinitcpio-utils mkinitcpio-netconf
+```
+
 ```
 # ...
   MODULES=(btrfs pcie_brcmstb broadcom)
